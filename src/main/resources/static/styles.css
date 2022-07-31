@@ -1,0 +1,33 @@
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: olivedrab;
+    padding: 50px;
+}
+
+.loadForm {
+    position: relative;
+    left: 40%;
+}
+
+.loadForm tr {
+    position: relative;
+    right: 20%;
+}
+
+.loadForm th {
+    padding-right: 50px;
+}
+
+#my-form, #update-form {
+    position: relative;
+    left: 25%;
+}
+
+#delete-form {
+    padding-top: 30px;
+    position: relative;
+    left: 40%;
+}

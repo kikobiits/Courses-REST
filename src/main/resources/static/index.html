@@ -11,33 +11,69 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-<button id="loadCourses">LOAD ALL COURSES</button>
-<table>
-    <thead>
-    <tr>
-        <th>Title</th>
-        <th>Room</th>
-        <th>Lecturer</th>
-        <th>Time</th>
-    </tr>
-    </thead>
-    <tbody id="courses-container"></tbody>
-</table>
 
-<form id="my-form">
-    <h3>FORM</h3>
+<main>
 
-    <label for="title">TITLE</label>
-    <input type="text" id="title" placeholder="Title...">
+    <div class="loadForm">
 
-    <label for="room">Room</label>
-    <input type="number" id="room" placeholder="Room...">
+        <button id="loadCourses">LOAD ALL COURSES</button>
+        <table>
+            <thead>
+            <tr>
+                <th>ID.</th>
+                <th>Title</th>
+                <th>Room</th>
+                <th>Lecturer</th>
+            </tr>
+            </thead>
+            <tbody id="courses-container"></tbody>
+        </table>
+    </div>
 
-    <label for="lecturer">Lecturer</label>
-    <input type="text" id="lecturer" placeholder="Lecturer...">
+    <form id="my-form">
+        <h3>Submit Course Form</h3>
 
-    <button type="submit" id="submitButton">Submit</button>
-</form>
+        <label for="title">TITLE</label>
+        <input type="text" id="title" placeholder="Title...">
+
+        <label for="room">Room</label>
+        <input type="number" id="room" placeholder="Room...">
+
+        <label for="lecturer">Lecturer</label>
+        <input type="text" id="lecturer" placeholder="Lecturer...">
+
+        <button type="submit" id="submitButton">Submit</button>
+
+    </form>
+
+    <form id="update-form">
+        <h3>Update Course Form</h3>
+
+        <label for="courseUpdateId">ID</label>
+        <input type="number" id="courseUpdateId" placeholder="Course ID...">
+
+        <label for="titleUpdate">TITLE</label>
+        <input type="text" id="titleUpdate" placeholder="Title...">
+
+        <label for="lecturerUpdate">Lecturer</label>
+        <input type="text" id="lecturerUpdate" placeholder="Lecturer...">
+
+        <label for="roomUpdate">Room</label>
+        <input type="number" id="roomUpdate" placeholder="Room...">
+
+        <button type="submit" id="courseUpdateButton">Update</button>
+
+    </form>
+
+    <form id="delete-form">
+        <h3>Delete Course</h3>
+
+        <label for="courseDeleteId">ID</label>
+        <input type="number" id="courseDeleteId" placeholder="Course ID...">
+
+        <button type="submit" id="deleteButton">Delete</button>
+    </form>
+</main>
 <script src="./app.js"></script>
 </body>
 </html>

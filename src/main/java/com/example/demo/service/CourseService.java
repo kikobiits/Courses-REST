@@ -55,6 +55,7 @@ public class CourseService {
     public Long submitCourse(CourseDTO courseDTO) {
 
         CourseEntity course = new CourseEntity();
+        course.setId(courseDTO.getId());
         course.setTitle(courseDTO.getTitle());
         course.setLecturer(courseDTO.getLecturer());
         course.setRoom(courseDTO.getRoom());
@@ -105,6 +106,7 @@ public class CourseService {
     private CourseDTO map(CourseEntity courseEntity) {
 
         CourseDTO mappedCourse = new CourseDTO();
+        mappedCourse.setId(courseEntity.getId());
         mappedCourse.setTitle(courseEntity.getTitle());
         mappedCourse.setRoom(courseEntity.getRoom());
         mappedCourse.setLecturer(courseEntity.getLecturer());

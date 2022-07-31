@@ -2,6 +2,8 @@ package com.example.demo.model.dto;
 
 public class CourseDTO {
 
+    private Long id;
+
     private String title;
 
     private Integer room;
@@ -33,5 +35,13 @@ public class CourseDTO {
 
     public void setLecturer(String lecturer) {
         this.lecturer = lecturer;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }
