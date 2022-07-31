@@ -42,16 +42,6 @@ public class CourseService {
         }
     }
 
-//    public void submitCourse(CourseDTO courseDTO) {
-//
-//        CourseEntity course = new CourseEntity();
-//        course.setTitle(courseDTO.getTitle());
-//        course.setLecturer(courseDTO.getLecturer());
-//        course.setRoom(courseDTO.getRoom());
-//
-//        courseRepository.save(course);
-//    }
-
     public Long submitCourse(CourseDTO courseDTO) {
 
         CourseEntity course = new CourseEntity();

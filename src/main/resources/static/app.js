@@ -131,6 +131,3 @@ document.querySelector('#update-form').addEventListener('submit', function () {
 
     xhr.send(JSON.stringify(data));
 })
-
-
-// todo update button logic
