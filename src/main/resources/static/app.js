@@ -113,7 +113,7 @@ document.querySelector('#update-form').addEventListener('submit', function () {
     // class for making a request
 
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", `http://localhost:8080/api/courses/${courseUpdateId}`, true);
+    xhr.open("PUT", `http://localhost:8080/api/courses/${courseUpdateId}`, true);
 
     // declare request headers for content type json
 
